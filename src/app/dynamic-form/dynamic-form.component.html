@@ -1,0 +1,4 @@
+<form [formGroup]="form">
+  <label [for]="question.controlName">{{ question.label }}</label>
+  <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type">
+</form>

@@ -1,0 +1,17 @@
+<div class="sidenav" >
+    <div class="sideicon">
+      <img class="avatar pointerCursor" src="/src/assets/images/prof.png" alt="Avatar"><br><br>
+      <a ><i class="glyphicon glyphicon-home pointerCursor"></i></a><br>
+      <a ><i class="glyphicon glyphicon-bell pointerCursor"></i></a><br>
+      <a ><i class="glyphicon glyphicon-user pointerCursor"></i></a><br>
+      <a onclick="document.getElementById('req').style.display='block'"><i class="glyphicon glyphicon-bookmark"></i></a><br>
+      <a (click)="panleExpanded = !panleExpanded"><i style="margin-bottom: 0px;" class="glyphicon glyphicon-cog"></i></a>
+        <div class="accord" *ngIf="panleExpanded">
+        <ul class="acc" style="list-style-type:none;">
+          <li><a  style="font-size: 12px" onclick="document.getElementById('editprof').style.display='block'">Edit Profile</a></li>
+          <li><a style="font-size: 12px" onclick="document.getElementById('accntset').style.display='block'">Account Settings</a></li>
+          <li><a style="font-size: 12px">Log Out</a></li>
+        </ul>
+        </div>
+    </div>    
+</div>

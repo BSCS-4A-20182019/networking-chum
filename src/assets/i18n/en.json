@@ -1,0 +1,12 @@
+{
+    "main": {
+        "title": "Auto Sidebar",
+        "testText": "This is a text test. This is translated by the translate service.",
+        "testTextWithVariable": "Another text added with {{name}} provided",
+        "testTextWithMultipleVariables": "This has multiple variables like {{ variable1 }} and {{ variable2 }}",
+        "buttonText": "Submit",
+        "modal": {
+            "changeProfilePicture": "Change profile picture"
+        }
+    }
+}

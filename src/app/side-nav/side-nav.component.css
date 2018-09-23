@@ -1,0 +1,25 @@
+/* SIDEBAR */    
+
+.sidenav {
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 88px;
+    left: 2px;
+    background-color: lightpink;
+    overflow-x: hidden;
+    text-align: center;
+    
+    
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block;
+   
+}
+
+/* SIDEBAR */ 

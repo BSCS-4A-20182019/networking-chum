@@ -1,0 +1,22 @@
+{
+    "main": [
+        {
+            "controlName": "username",
+            "label": "Username",
+            "type": "text"
+        },
+        {
+            "controlName": "password",
+            "label": "Password",
+            "type": "password"
+        },
+        {
+            "controlName": "confirmPassword",
+            "label": "Confirm Password",
+            "type": "password"
+        }
+    ],
+    "profile": [
+        
+    ]
+}
