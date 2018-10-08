@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Question } from '../models/question';
 
 @Injectable()
 export class QuestionsService {
@@ -7,7 +8,8 @@ export class QuestionsService {
 
   constructor() { }
 
-  public toFormGroup(): Formgroup {
+  public toFormGroup(): FormGroup {
+    
     let group = {};
     this.questions.forEach(
       question => {

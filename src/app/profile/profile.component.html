@@ -8,28 +8,24 @@
     }
 </style>
 
+<div class="profile">
+    <div class="wallpost">
+      <tr>
+        <td class="posttextarea"><textarea class="form-control" rows="2" id="comment" placeholder="Whats up ?"></textarea></td>
+        <td style="padding-left: 5%;padding-top: 3%"><a class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-picture"></span>
+        </a></td>
+      </tr>    
 
 <div class="pic img-responsive" style="background-image: url(/src/assets/images/ca2.jpg); width : 1368px; height: 700px">
 
-    <div class="row">    
-        <div style="padding-left: 68%; padding-top: 15%">
+    <form [formGroup]="formGroup">
+        <div class="col-sm-3" >
+            <dynamic-form [question]="getQuestion('username')" [form]="formGroup"></dynamic-form>
+            <dynamic-form [question]="getQuestion('password')" [form]="formGroup"></dynamic-form>
         </div>
-    <div>   
-        <div class="row" style="padding-left: 70%">
-            <br>
-            <br>
-            <div class="separator">
-                <button class="btn btn-success" [disabled]="isDisabled()"
-                  id="submit" (click)="submit()" style="width: 60%">Log In
-                </button>
-            </div>
-        </div>
-    </div>
-        <div style="padding-right: 12%; float: right; padding-top: 10%; font-size: 18px">  
-            {{info}}<a href="/signup" (click)="signup( )"> Sign-Up</a>
-        </div>
-    </div>
+        <button>Submit</button>
     
     
     
-</div>
+

@@ -1,5 +1,5 @@
 {
-    "main": {
+        "main": {
         "title": "Auto Sidebar",
         "testText": "This is a text test. This is translated by the translate service.",
         "testTextWithVariable": "Another text added with {{name}} provided",
@@ -7,6 +7,22 @@
         "buttonText": "Submit",
         "modal": {
             "changeProfilePicture": "Change profile picture"
-        }
+        },
+
+    "login": {
+        "username": "Username",
+        "password": "Password",
+        "loginbutton": "Log In"
+    },
+
+    "signup": {
+        "email": "Email",
+        "fullname": "Full Name",
+        "username": "Username",
+        "password": "Password",
+        "confirmpw": "Confirm Password"
+
     }
 }
+}
+

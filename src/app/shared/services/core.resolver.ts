@@ -1,6 +1,6 @@
 import { Resolve } from '@angular/router';
 import { Injectable } from '@angular/core';
-import { Observable, Promise } from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { ApiService } from '../../shared/services/api.service';
 import { QuestionsService } from '../../shared/services/questions.service';
@@ -8,7 +8,7 @@ import { QuestionsService } from '../../shared/services/questions.service';
 import { Question } from '../../shared/models/question';
 
 @Injectable()
-export class MainResolver implements Resolve {
+export class CoreResolver implements Resolve<any> {
   constructor(private apiService: ApiService, private questionsService: QuestionsService) { }
 
   resolve(): Promise<any> {

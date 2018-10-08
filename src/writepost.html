@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  .avatar {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+
+  }
+  .font{
+    font-style: serif;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .pic {
+    grid-area: 1 / 1 / span 5 / span 3;
+    text-align: center;
+    padding-right: 70px;
+    margin-right: 10px;
+  }
+  .name{
+    text-align: left;
+    font-size: 35px;
+    margin-right: 10px;
+  }
+  .colorfont{
+    color: orange;
+    font-size: 20px;
+    padding-right: 50%;
+    text-align: left;
+    margin-right: 10px;
+  }
+  .style2{
+    font-size: 15px;
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+  .style3{
+    font-size: 15px;
+    text-decoration: underline;
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+  .panel{
+    width: 600px;
+    padding: 20px;
+  }
+  .buttonpost{
+    box-shadow: 3px 3px #888888;
+    font-weight: bold;
+    margin-left: 350px;
+    width: 30%;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+</style>
+
+<head>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body" style="padding: 10px;" class="panel">
+      <div class="grid-container">
+        <div class="pic" style="padding-left: 20%"><img src="prof.png" alt="avatar" width="150" height="150" style="border-radius: 50%"></div>
+        <div class="name" class="font">---Username---</div>
+        <div class="colorfont" style="">@akosimata</div>
+        <div class="style2">CEU MAKATI | COMSCI</div>
+        <div class="style3"><a href="Timeline">Timeline | <a href="Chums">Chums | <a href="Edit Profile">Edit Profile</a></a></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body" style="padding: 10px;" class="panel">
+      <div><center><textarea rows="5"cols="50"class="cols-sm-10" name="post" form="usrform" placeholder="What's Up" ></textarea></center></div>
+      <div><button class="buttonpost" id="post">POST</button></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -3,16 +3,21 @@ import {MainComponent} from './main/main.component';
 import {NgModule} from '@angular/core';
 import {ProfileComponent} from './profile/profile.component';
 import {SignupComponent} from './profile/signup.component';
+import {LoginComponent} from './login/login.component';
 
-import { MainResolver } from './main/services/main.resolver';
+import { CoreResolver } from './shared/services/core.resolver';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/profile', pathMatch: 'full' },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'main', component: MainComponent, resolve: { resolver: MainResolver } },
-  { path: 'signup', component: SignupComponent},
- 
-  
+  {
+  	path: 'chum',
+  	resolve: { resolver: CoreResolver },
+  	children: [
+	  { path: '', redirectTo: 'login', pathMatch: 'full' },
+	  { path: 'main', component: MainComponent }, // TODO: add canActivate to guard the component
+	  { path: 'login', component: LoginComponent },
+	  { path: 'signup', component: SignupComponent }
+  ]
+  }
 ];
 
 @NgModule({

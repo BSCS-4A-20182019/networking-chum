@@ -1,17 +1,10 @@
-<div class="sidenav" >
-    <div class="sideicon">
-      <img class="avatar pointerCursor" src="/src/assets/images/prof.png" alt="Avatar"><br><br>
-      <a ><i class="glyphicon glyphicon-home pointerCursor"></i></a><br>
-      <a ><i class="glyphicon glyphicon-bell pointerCursor"></i></a><br>
-      <a ><i class="glyphicon glyphicon-user pointerCursor"></i></a><br>
-      <a onclick="document.getElementById('req').style.display='block'"><i class="glyphicon glyphicon-bookmark"></i></a><br>
-      <a (click)="panleExpanded = !panleExpanded"><i style="margin-bottom: 0px;" class="glyphicon glyphicon-cog"></i></a>
-        <div class="accord" *ngIf="panleExpanded">
-        <ul class="acc" style="list-style-type:none;">
-          <li><a  style="font-size: 12px" onclick="document.getElementById('editprof').style.display='block'">Edit Profile</a></li>
-          <li><a style="font-size: 12px" onclick="document.getElementById('accntset').style.display='block'">Account Settings</a></li>
-          <li><a style="font-size: 12px">Log Out</a></li>
-        </ul>
-        </div>
-    </div>    
+
+<div class="sidebar">
+  <a><img class="avat" src="/src/assets/images/prof.png"></a>
+  <a class="homeicon"><img src="/src/assets/images/home.png" style="height: 40px; width: 90px"></a>
+  <a class="notificon"><img src="/src/assets/images/notif.PNG" style="height: 40px; width: 90px"></a>
+  <a class="friendicon"><img src="/src/assets/images/friend.PNG" style="height: 40px; width: 90px"></a>
+  <a class="saveicon"><img src="/src/assets/images/saved.png" style="height: 40px; width: 90px"></a>
+  <a class="settingicon"><img src="/src/assets/images/settings.PNG" style="height: 40px; width: 90px"></a>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

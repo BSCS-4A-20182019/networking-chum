@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+  #customers {
+
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customers td {
+
+    padding: 8px;
+  }
+
+
+  body {font-family: "Lato", sans-serif;
+
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: lightpink;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 96px;
+  }
+  .avatar{
+    border-radius: 50%;
+  }
+  .hd{
+    background-color:lightpink;
+  }
+  .navbar a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 27px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+
+  }
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+    margin-left: 300px;
+    /* Used in this example to enable scrolling */
+  }
+  .sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightpink;
+    overflow-x: hidden;
+    padding-top: 16px;
+    text-align: center;
+  }
+
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+
+  }
+  .glyphicon{
+    font-size: 40px;
+    color: white;
+  }
+
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  .avatar {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .chums{
+    height: 80px;
+    width: 99%;
+    text-align: center;
+  }
+  .button2 {
+    background-color: #FFB6C1;
+    border: none;
+  }
+  .button1{
+    box-shadow: 3px 3px #888888;
+
+    
+    background-color:lightpink;
+  }
+  .button3{
+    text-align: center;
+  }
+
+</style>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<body style="padding-top: 100px">
+
+
+<div class="navbar">
+  <img style="padding-top: 10px; text-align: center" class="chums" src="/src/assets/images/CHUMlogooo2.jpg" alt="Avatar">
+
+</div>
+
+
+<div class="sidebar" style="margin-top: 95px">
+  <br>
+  <img class="avatar" src="/src/assets/images/aldreen.jpg" >><br><br>
+  <a href="#home"><i class="glyphicon glyphicon-home"></i></a><br>
+  <a href="#services"><i class="glyphicon glyphicon-bell"></i></a><br>
+  <button class="button2" onclick="document.getElementById('req').style.display='block'">
+    <span class="glyphicon glyphicon-user" style="padding-left: 17% ; padding-bottom: 55%"  ></span>
+  </button>
+  <a href="#contact"><i class="glyphicon glyphicon-bookmark"></i></a><br>
+  <a onclick="document.getElementById('req1').style.display='block'"><i class="glyphicon glyphicon-cog"></i></a>
+</div>
+
+<div class="main">
+  <h2><b>Janiah Kate Fuertes</b></h2>
+  <p>This side navigation is of full height (100%) and always shown.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id aga   m omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>This side navigation is of full height (100%) and always shown.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>This side navigation is of full height (100%) and always shown.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>This side navigation is of full height (100%) and always shown.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>This side navigation is of full height (100%) and always shown.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+</body>
+
+//SETTINGS
+<div id="req1" class="w3-modal"tyle="text-align: center; s">
+  <div class="w3-modal-content">
+    <header >
+      <h2 style="text-align: center">EDIT PROFILE</h2>
+      <span onclick="document.getElementById('req1').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+
+    </header>
+    <div class="container" style="horiz-align: center; padding-left: 200px">
+      <form>
+        <table id="customers">
+          <tr>
+            <td>Change Profile Picture</td>
+            <td><input type="file" value="Choose File" style="width: 250px"></td>
+
+          </tr>
+          <tr>
+            <td>EMAIL:</td>
+            <td><input type="text" required="required"></td>
+
+          </tr>
+          <tr>
+            <td>NAME:</td>
+            <td><input type="text" required="required"></td>
+
+          </tr>
+          <tr>
+            <td>USERNAME:</td>
+            <td><input type="text"></td>
+
+          </tr>
+          <tr>
+            <td>PASSWORD:</td>
+            <td><input type="password"></td>
+
+          </tr>
+          <tr>
+            <td>BIO:</td>
+            <td><input type="textarea" rows="4" ></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-primary" type="submit"> SAVE</button></td>
+            <td>            <button type="button" class="btn btn-primary" onclick="document.getElementById('req1').style.display='none'">Cancel</button></td>
+          </tr>
+
+        </table>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

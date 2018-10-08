@@ -1,0 +1,24 @@
+<div class="body">
+<div class="pic img-responsive" style="background-image: url(/src/assets/images/ca2.jpg); width : 1400px; height: 5000px">
+    
+      <div class="signup">
+        <div class=""
+        <form [formGroup]="formGroup">
+            <div class="col-sm-5" >
+              <div class = "signupsubmit">
+                <dynamic-form [question]="getQuestion('email')" [form]="formGroup" ></dynamic-form>
+                <dynamic-form [question]="getQuestion('fullname')" [form]="formGroup" ></dynamic-form>
+                <dynamic-form [question]="getQuestion('username')" [form]="formGroup" ></dynamic-form>
+                <dynamic-form [question]="getQuestion('password')" [form]="formGroup" ></dynamic-form>
+                <dynamic-form [question]="getQuestion('confirmpw')" [form]="formGroup"></dynamic-form>
+              </div>
+            </div>
+            <div class="signupbutton">
+              <button [disabled]="isDisabled()" class="btn btn-success">
+                {{ getComponentName() + '.signupbutton' | translate }}
+              </button>
+            </div>
+      </form>
+    </div> 
+    </div>
+    </div>

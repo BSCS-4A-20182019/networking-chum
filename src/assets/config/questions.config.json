@@ -16,7 +16,44 @@
             "type": "password"
         }
     ],
-    "profile": [
+    "login": [
+        {
+            "controlName": "username",
+            "label": "Username",
+            "type": "text"
+        },
+        {
+            "controlName": "password",
+            "label": "Password",
+            "type": "password"
+        }
         
+    ],
+    "signup": [
+        {
+            "controlName": "email",
+            "label": "Email",
+            "type": "text"
+    },
+    {
+        "controlName": "fullname",
+        "label": "Full Name",
+        "type": "text"
+    },
+    {
+        "controlName": "username",
+        "label": "Username",
+        "type": "text"
+    },
+    {
+        "controlName": "password",
+        "label": "Password",
+        "type": "password"
+    },
+    {
+        "controlName": "confirmpw",
+        "label": "Confirm Password",
+        "type": "password"
+    }
     ]
 }

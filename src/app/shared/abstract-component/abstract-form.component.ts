@@ -6,7 +6,7 @@ import { QuestionsService } from '../services/questions.service';
 
 import { Question } from '../models/question';
 
-export class AbstractFormComponent implements OnInit {
+export abstract class AbstractFormComponent implements OnInit {
   formGroup: FormGroup;
 
   constructor(private questionsService: QuestionsService) { }
@@ -15,7 +15,7 @@ export class AbstractFormComponent implements OnInit {
     this.formGroup = this.questionsService.toFormGroup();
   }
 
-  abstract getComponentName();
+  abstract getComponentName(): string;
 
   public getQuestion(controlName: string): Question {
     return this.questionsService.getQuestionByControlName(controlName);

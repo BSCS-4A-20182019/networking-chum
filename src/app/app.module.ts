@@ -5,6 +5,8 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 
 
+
+
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MainComponent } from './main/main.component';
@@ -23,7 +25,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ApiService } from './shared/services/api.service';
 import { QuestionsService } from './shared/services/questions.service';
 
-import { MainResolver } from './main/services/main.resolver';
+import { CoreResolver } from './shared/services/core.resolver';
+import { LoginComponent } from './login/login.component';
+import { AccountsettingsComponent } from './accountsettings/accountsettings.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, "/assets/i18n/", ".json");
@@ -39,7 +43,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FooterComponent,
     SignupComponent,
     NavBarComponent,
-    SideNavComponent
+    SideNavComponent,
+    LoginComponent,
+    AccountsettingsComponent
+
   ],
   imports: [
     BrowserModule,
@@ -54,11 +61,12 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         deps: [HttpClient]
       }
     })
+    
   ],
   providers: [
     ApiService,
     QuestionsService,
-    MainResolver
+    CoreResolver
   ],
   exports: [
     TranslateModule
